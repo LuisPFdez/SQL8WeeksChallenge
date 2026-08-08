@@ -33,4 +33,5 @@ En caso de usar directamente un script es necesario usar `USE db1;` en caso de u
 Los clientes utilizados han sido [HeidiSQL](https://www.heidisql.com/) y [sqltools](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools) de visual studio code.
 
 ## **Case Study #1 - Danny's Diner**
-[Scripts iniciales](/case_1/create.md)
+[Scripts iniciales](/case_1/Readme.md)
+[Retos](/case_1/Querys.md)
