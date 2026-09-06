@@ -35,3 +35,5 @@ Los clientes utilizados han sido [HeidiSQL](https://www.heidisql.com/) y [sqltoo
 ## **Case Study #1 - Danny's Diner**
 [Scripts iniciales](/case_1/Readme.md)
 [Retos](/case_1/Querys.md)
+[Scripts iniciales](/case_2/Readme.md)
+[Retos](/case_2/Querys.md)
