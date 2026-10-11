@@ -115,7 +115,7 @@ obtener el nombre del producto.
 WITH temp AS (
         SELECT product_id,
             COUNT(product_id) AS TOTAL,
-            RANK() OVER (
+            RANK() OVER(
                 ORDER BY TOTAL DESC
             ) AS rank
         FROM sales s
@@ -200,7 +200,7 @@ ordenarlo por el total y agruparlos por el id del cliente
 WITH temp AS (
     SELECT product_id,
         customer_id,
-        RANK() OVER (
+        RANK() OVER(
             PARTITION BY s.customer_id
             ORDER BY order_date
         ) AS rank
@@ -238,7 +238,7 @@ Luego seleccionamos el id del cliente y el nombre del producto obtenido por un
 ```sql
 WITH temp AS (
         SELECT *,
-            RANK() OVER (
+            RANK() OVER(
                 PARTITION BY s.customer_id
                 ORDER BY order_date DESC
             ) AS rank
@@ -492,7 +492,7 @@ FROM sales
 Select *,
     CASE
         member
-        WHEN 'Y' THEN rank() over(
+        WHEN 'Y' THEN rank() OVER(
             PARTITION BY customer_id,
             member
             order by order_date
